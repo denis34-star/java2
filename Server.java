@@ -23,6 +23,7 @@ public class Server {
             System.out.println("server started!");
 
             while (true) {
+                socket.setSoTimeout(120000);
                 socket = server.accept();
                 System.out.println("client connected " + socket.getRemoteSocketAddress());
                 new ClientHandler(this, socket);
