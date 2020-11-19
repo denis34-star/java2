@@ -34,7 +34,7 @@ public class Server {
         } finally {
             System.out.println("server closed");
             try {
-                socket.setSoTimeout(120000);
+               
                 server.close();
             } catch (IOException e) {
                 e.printStackTrace();
