@@ -249,7 +249,4 @@ public class Controller implements Initializable {
         }
     }
 
-    public class SocketTest {
-
-    }
 }
